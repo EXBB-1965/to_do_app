@@ -6,6 +6,7 @@ class TasksController < ApplicationController
   end
 
   def create
+    Task.create(title: params[:title])
     redirect_to "/tasks"
   end
 end
